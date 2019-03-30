@@ -1,0 +1,57 @@
+/* TOP */
+#header{
+    background: grey;
+    height: 400px;
+}
+.main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    height: 100px;
+}
+.Logo{
+    font-size: 30px;
+}
+.red{
+    color: red !important;
+}
+.Link{
+    list-style-type: none;
+    display: inline-block;
+    width: 60px;
+}
+.Link a{
+    font-size: 23px;
+    color: black;
+}
+.LinkUl{
+    display: flex;
+    flex-direction: row;
+}
+
+/* Bottom */
+.h80{
+    height: 250px;
+}
+.mainBottom{
+    display: flex;
+    flex-direction: row;
+}
+.intro{
+    width: 40%;
+    padding: 30px;
+}
+.carousellDiv{
+    width: 60%;
+}
+.mainIntro{
+    font-size: 30px;
+    text-align: start;
+}
+.subIntro{
+    font-size: 20px;
+    text-align: start;
+}
+
+
