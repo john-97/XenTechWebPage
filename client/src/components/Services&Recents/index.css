@@ -1,0 +1,10 @@
+.SRImage{
+    width: 180px;
+    height: 180px;
+}
+.SR{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 30px 0; 
+}

@@ -11,3 +11,54 @@ body{
   width: 600px;
   margin: 0 auto;
 }
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 425px) {
+  /* remove carousell and intro */
+  .mainBottom{
+    height: 0;
+    overflow: hidden;
+  }
+  /* realign nav */
+  .NavDiv{
+    flex-direction: column !important;
+    justify-content: flex-start !important;
+    text-align: start !important;
+  }
+  /* show and hide nav */
+  .mobileHeader{
+    height: 300px !important;
+  }
+  .mobileHeaderFalse{
+    height: 100px !important;
+  }
+  .mobileHeaderFalseLinks{
+    display: none !important;
+  }
+  /* Others */
+  .Nav{
+    flex-direction: column !important;
+  }
+  .hidden{
+    display: none !important;
+  }
+  .SR{
+    justify-content: center !important;
+  }
+  .centering{
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 768px) {
+  .centering{
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .centering{
+    width: 900px;
+    margin: 0 auto;
+  }
+}

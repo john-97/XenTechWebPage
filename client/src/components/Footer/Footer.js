@@ -7,20 +7,20 @@ export default class Footer extends Component {
     return (
       <div id="footer">
         <div className="centering">
-        <div className="main">
+        <div className="mainFooter">
             {/* LINKS */}
             <div className="LinkDiv">
               <ul className="LinkUl">
-                <li className="LinkFooter"><NavLink 
+                <li className="LinkFooter hidden"><NavLink 
                   to='/1'
                   activeClassName="red">One</NavLink></li>
-                <li className="LinkFooter"><NavLink 
+                <li className="LinkFooter hidden"><NavLink 
                   to='/2'
                   activeClassName="red">Two</NavLink></li>
-                <li className="LinkFooter"><NavLink 
+                <li className="LinkFooter hidden"><NavLink 
                   to='/3'
                   activeClassName="red">Three</NavLink></li>
-                <li className="LinkFooter"><NavLink 
+                <li className="LinkFooter hidden"><NavLink 
                   to='/4'
                   activeClassName="red">Four</NavLink></li>
                 <li className="LinkFooter"><NavLink 

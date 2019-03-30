@@ -3,18 +3,40 @@ import './index.css'
 import { NavLink } from 'react-router-dom'
 
 class Header extends Component {
+  constructor(){
+    super()
+    this.state={
+      height:"mobileHeaderFalse"
+    }
+    this.handleClick = this.handleClick.bind(this)
+  }
+  handleClick(){
+    this.setState(()=>{
+      if(this.state.height === "mobileHeader"){
+        return{
+          ...this.state,
+          height: "mobileHeaderFalse"
+        }
+      }else{
+        return{
+          ...this.state,
+          height: "mobileHeader"
+        }
+      }
+    })
+  }
   render() {
     return (
-      <div id="header">
+      <div className={`header ${this.state.height}`}>
         <div className="centering">
-          <div className="main">
+          <div className={`main NavDiv`}>
               {/* LOGO */}
-            <div className="Logo">
+            <div className="Logo" onClick={this.handleClick}>
               Logo
             </div>
             {/* LINKS */}
-            <div className="LinkDiv">
-              <ul className="LinkUl">
+            <div className={`LinkDiv ${this.state.height}Links`}>
+              <ul className="LinkUl Nav">
                 <li className="Link"><NavLink 
                   to='/1'
                   activeClassName="red">One</NavLink></li>
