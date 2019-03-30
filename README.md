@@ -8,3 +8,16 @@
 </p>
 
 ### Installation
+
+```
+git clone https://github.com/john-97/XenTechWebPage.git
+
+// RUN DEVELOPMENT SERVER
+cd client
+npm start
+
+// RUN BUILD SERVER
+cd client
+npm run build
+serve -s build
+```
