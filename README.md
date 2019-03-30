@@ -21,3 +21,6 @@ cd client
 npm run build
 serve -s build
 ```
+
+### Enquiries
+Should there be any Enquiries, feel free to ask me at jonathanchowjh@gmail.com, I would be more than willing to talk about any you might have
