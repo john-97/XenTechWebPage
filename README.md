@@ -24,7 +24,7 @@ serve -s build
 
 ### Technologies
 * **ReactJS**
-* **ReactRouter**
+* **ReactRouterDom**
 * **Redux**
 
 ### Enquiries
