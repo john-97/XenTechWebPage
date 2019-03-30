@@ -22,17 +22,22 @@ class ServicesRecents extends Component {
   componentDidMount(){
     console.log(this.props)
     // calls on the picture Randomiser function every 3 seconds
-    setInterval(this.services,3000)
+    setInterval(()=>{this.services("services")},10000)
+    // calls on the picture Randomiser function every 3 seconds
+    setInterval(()=>{this.services("recentWork")},15000)
+
   }
   // Changes the Pictures at random, Ensures that no 2 pictures are the same
-  services(){
+  services(TYPE){
     let one = parseInt(Math.random()*this.props.store.services.length)
     let two = parseInt(Math.random()*this.props.store.services.length)
     let three = parseInt(Math.random()*this.props.store.services.length)
     let oneRW = parseInt(Math.random()*this.props.store.recentWork.length)
     let twoRW = parseInt(Math.random()*this.props.store.recentWork.length)
     let threeRW = parseInt(Math.random()*this.props.store.recentWork.length)
-    if((one !== two && three !== two && one !== three) && (oneRW !== twoRW && threeRW !== twoRW && oneRW !== threeRW)){
+    
+    if(TYPE === "services"){
+      if(one !== two && three !== two && one !== three){
         this.setState(()=>{
           return {
             ...this.state,
@@ -40,7 +45,18 @@ class ServicesRecents extends Component {
               one: this.props.store.services[one].image,
               two: this.props.store.services[two].image,
               three: this.props.store.services[three].image
-            },
+            }
+          }
+        })
+      }else{
+        this.services();
+      }
+    }
+    if(TYPE === "recentWork"){
+      if(oneRW !== twoRW && threeRW !== twoRW && oneRW !== threeRW){
+        this.setState(()=>{
+          return {
+            ...this.state,
             recentWork:{
               one: this.props.store.recentWork[oneRW].image,
               two: this.props.store.recentWork[twoRW].image,
@@ -48,8 +64,9 @@ class ServicesRecents extends Component {
             }
           }
         })
-    }else{
-      this.services();
+      }else{
+        this.services();
+      }
     }
   }
 
@@ -57,6 +74,7 @@ class ServicesRecents extends Component {
     return (
       <div>
         <div className="centering">
+          {/* SERVICES */}
           <div className="SR">
             <div className="SRDiv">
               <img className="SRImage" src={this.state.services.one} alt="..." />
@@ -68,6 +86,7 @@ class ServicesRecents extends Component {
               <img className="SRImage" src={this.state.services.three} alt="..." />
             </div>
           </div>
+          {/* RECENT WORK */}
           <div className="SR">
             <div className="SRDiv">
               <img className="SRImage" src={this.state.recentWork.one} alt="..." />
