@@ -48,6 +48,6 @@ serve -s build
 Should there be any Enquiries, feel free to ask me at jonathanchowjh@gmail.com, I would be more than willing to talk about any you might have
 
 #### Media queries
-* **Less Than 425px Phone Size**
-* **Default Tablet Size**
-* **More Than 1024px Laptop Size**
+* **Less Than 425px: Phone Size**
+* **Default: Tablet Size**
+* **More Than 1024px: Laptop Size**
