@@ -7,6 +7,10 @@
   <img src="https://i.imgur.com/RjAK5W8.png" width="250" title="Christmas Card">
 </p>
 
+### Fast Deployment
+
+OPEN http://abject-sky.surge.sh
+
 ### Installation
 
 ```
@@ -16,7 +20,7 @@ git clone https://github.com/john-97/XenTechWebPage.git
 cd client
 npm start
 
-// RUN BUILD SERVER
+// RUN PRODUCTION BUILD
 cd client
 npm run build
 serve -s build
