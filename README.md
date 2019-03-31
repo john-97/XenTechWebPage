@@ -25,11 +25,11 @@ Deployment Documentation: https://facebook.github.io/create-react-app/docs/deplo
 ```
 git clone https://github.com/john-97/XenTechWebPage.git
 
-// RUN DEVELOPMENT SERVER
+// RUN DEVELOPMENT SERVER (RUNS ON localhost:3000)
 cd client
 npm start
 
-// RUN PRODUCTION BUILD
+// RUN PRODUCTION BUILD (RUNS ON localhost:5000)
 cd client
 npm run build
 serve -s build
