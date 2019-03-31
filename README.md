@@ -47,7 +47,7 @@ serve -s build
 ### Enquiries
 Should there be any Enquiries, feel free to ask me at jonathanchowjh@gmail.com, I would be more than willing to talk about any you might have
 
-#### Media queries (3 main resizing)
+#### Media queries
 * **Less Than 425px Phone Size**
-* **768px Tablet Size**
+* **Default Tablet Size**
 * **More Than 1024px Laptop Size**
