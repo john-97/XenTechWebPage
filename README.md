@@ -15,6 +15,9 @@ OPEN http://abject-sky.surge.sh
 
 ### Installation
 
+#### Prerequisites: 
+* **NodeJS (https://nodejs.org/en/download/)**
+
 ```
 git clone https://github.com/john-97/XenTechWebPage.git
 
@@ -31,6 +34,7 @@ serve -s build
 ---
 
 ### Technologies
+* **NodeJS/ NPM (Prerequisite to Install Commands)**
 * **ReactJS**
 * **ReactRouterDom**
 * **Redux**
@@ -40,6 +44,6 @@ serve -s build
 Should there be any Enquiries, feel free to ask me at jonathanchowjh@gmail.com, I would be more than willing to talk about any you might have
 
 #### Media queries (3 main resizing)
-* **425px Phone Size**
+* **Less Than 425px Phone Size**
 * **768px Tablet Size**
-* **1024px Laptop Size**
+* **More Than 1024px Laptop Size**
