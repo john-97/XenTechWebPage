@@ -7,6 +7,8 @@
   <img src="https://i.imgur.com/RjAK5W8.png" width="250" title="Christmas Card">
 </p>
 
+---
+
 ### Fast Deployment
 
 OPEN http://abject-sky.surge.sh
@@ -26,6 +28,8 @@ npm run build
 serve -s build
 ```
 
+---
+
 ### Technologies
 * **ReactJS**
 * **ReactRouterDom**
@@ -34,3 +38,8 @@ serve -s build
 
 ### Enquiries
 Should there be any Enquiries, feel free to ask me at jonathanchowjh@gmail.com, I would be more than willing to talk about any you might have
+
+#### Media queries (3 main resizing)
+* **425px Phone Size**
+* **768px Tablet Size**
+* **1024px Laptop Size**
