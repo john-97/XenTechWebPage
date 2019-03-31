@@ -13,6 +13,10 @@
 
 OPEN http://abject-sky.surge.sh
 
+Deployment Documentation: https://facebook.github.io/create-react-app/docs/deployment
+
+---
+
 ### Installation
 
 #### Prerequisites: 
