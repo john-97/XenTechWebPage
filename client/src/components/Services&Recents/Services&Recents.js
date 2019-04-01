@@ -49,7 +49,7 @@ class ServicesRecents extends Component {
           }
         })
       }else{
-        this.services();
+        this.services("services");
       }
     }
     if(TYPE === "recentWork"){
@@ -65,7 +65,7 @@ class ServicesRecents extends Component {
           }
         })
       }else{
-        this.services();
+        this.services("recentWork");
       }
     }
   }
